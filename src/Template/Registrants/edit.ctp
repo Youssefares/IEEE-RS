@@ -25,7 +25,6 @@
             echo $this->Form->input('Academic_Year');
             echo $this->Form->input('membership_status');
             echo $this->Form->input('fees');
-            echo $this->Form->input('Ticket_Number');
             echo $this->Form->input('Registrer');
             echo $this->Form->input('Notes');
         ?>

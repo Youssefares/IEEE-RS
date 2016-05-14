@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
 use Cake\ORM\Query;
+
 /**
  * Registrants Controller
  *
@@ -11,10 +12,10 @@ use Cake\ORM\Query;
  */
 class RegistrantsController extends AppController
 {
-  public function beforeFilter(\Cake\Event\Event $event)
-  {
+
+    public function beforeFilter(\Cake\Event\Event $event){
       $this->Auth->allow();
-  }
+    }
     /**
      * Index method
      *
@@ -58,6 +59,18 @@ class RegistrantsController extends AppController
         $registrant = $this->Registrants->newEntity();
         if ($this->request->is('post')) {
             $registrant = $this->Registrants->patchEntity($registrant, $this->request->data);
+            $value = $registrant->course_id;
+            $courses = TableRegistry::get('courses');
+            $course = $courses
+                   ->find()
+                   ->where(['id' => $value])
+                   ->first();
+            $seats = $course->remaining_seats;
+            $c = $courses->query();
+            $c->update()
+             ->set(['remaining_seats' => $seats-1 ])
+             ->where(['id' => $value])
+             ->execute();
             if ($this->Registrants->save($registrant)) {
                 $this->Flash->success(__('The registrant has been saved.'));
                 return $this->redirect(['action' => 'index']);

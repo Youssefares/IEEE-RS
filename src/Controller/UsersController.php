@@ -14,6 +14,10 @@ class UsersController extends AppController
   {
       $this->Auth->allow(['add']);
   }*/
+  public function beforeFilter(\Cake\Event\Event $event){
+    $this->Auth->allow();
+  }
+
   public function logout()
   {
     $this->Flash->success('You are now logged out.');

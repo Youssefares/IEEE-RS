@@ -26,7 +26,6 @@ class RegistrantsFixture extends TestFixture
         'Academic_Year' => ['type' => 'string', 'length' => 40, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'membership_status' => ['type' => 'string', 'length' => 300, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'fees' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'Ticket_Number' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'Registrer' => ['type' => 'string', 'length' => 300, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'Notes' => ['type' => 'string', 'length' => 300, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_indexes' => [
@@ -59,7 +58,6 @@ class RegistrantsFixture extends TestFixture
             'Academic_Year' => 'Lorem ipsum dolor sit amet',
             'membership_status' => 'Lorem ipsum dolor sit amet',
             'fees' => 1,
-            'Ticket_Number' => 1,
             'Registrer' => 'Lorem ipsum dolor sit amet',
             'Notes' => 'Lorem ipsum dolor sit amet'
         ],

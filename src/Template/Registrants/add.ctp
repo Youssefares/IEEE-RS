@@ -10,16 +10,16 @@
     <?= $this->Form->create($registrant) ?>
     <fieldset>
         <legend><?= __('Add Registrant') ?></legend>
+        <?php $courses->applyOptions(['conditions'=>['remaining_seats >' => '0']]);?>
         <?php
-            echo $this->Form->input('course_id', ['options' => $courses, 'empty' => true]);
+            echo $this->Form->input('course_id', ['options' => $courses]);
             echo $this->Form->input('Name');
             echo $this->Form->input('Mobile_Number');
             echo $this->Form->input('Email');
             echo $this->Form->input('Department');
             echo $this->Form->input('Academic_Year');
-            echo $this->Form->input('membership_status');
+            echo $this->Form->input('membership_status',['options' => ['Non-member','Member']]);
             echo $this->Form->input('fees');
-            echo $this->Form->input('Ticket_Number');
             echo $this->Form->input('Registrer');
             echo $this->Form->input('Notes');
         ?>

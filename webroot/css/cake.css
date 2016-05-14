@@ -4,19 +4,19 @@ a.disabled {
 }
 
 a:hover {
-    color: #15848F;
+    color: #1a72bd;
 }
 
 a {
-    color: #1798A5;
+    color: #1a80bd;
 }
 
 .side-nav li a:not(.button) {
-    color: #15848F;
+    color: #1a80bd;
 }
 
 .side-nav li a:not(.button):hover {
-    color: #15848F;
+    color: #1a72bd;
 }
 
 header {
@@ -34,7 +34,7 @@ header .header-title {
 }
 
 legend {
-    color:#15848F;
+    color:#1a80bd;
 }
 
 .row {
@@ -370,11 +370,11 @@ pre {
 }
 
 .top-bar.expanded .title-area {
-    background: #01545b;
+    background: #1a72bd;
 }
 
 .top-bar.expanded, .top-bar,.top-bar-section ul li,.top-bar-section li:not(.has-form) a:not(.button) {
-    background: #116d76;
+    background: #1a80bd;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -383,7 +383,7 @@ pre {
 }
 
 .side-nav li.heading {
-    color: #1798A5;
+    color: #1a80bd;
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -391,7 +391,7 @@ pre {
 }
 
 #actions-sidebar {
-    background: #fafafa;
+    background: #ecf8ff;
 }
 
 .index table {
@@ -416,15 +416,15 @@ table tr {
 }
 
 table thead tr {
-    border-bottom: 1px solid #1798A5;
+    border-bottom: 1px solid #1a80bd;
 }
 
 table tr th {
     padding: 0.5625rem 0.625rem;
     font-size: 0.875rem;
-    color: #1798A5;
+    color: #1a80bd;
     text-align: left;
-    border-bottom: 2px solid #1798A5;
+    border-bottom: 2px solid #1a80bd;
 }
 
 table tr:nth-of-type(even) {
@@ -438,7 +438,7 @@ fieldset {
 }
 
 fieldset legend {
-    border-bottom: 2px solid #1798A5;
+    border-bottom: 2px solid #1a80bd;
     width: 100%;
     line-height: 2rem;
 }
@@ -464,8 +464,8 @@ div.message {
     font-weight: normal;
     padding: 0 1.5rem 0 1.5rem;
     transition: height 300ms ease-out 0s;
-    background-color: #a0d3e8;
-    color: #626262;
+    background-color: #5fbbee;
+    color: #1a72bd;
     position: fixed;
     top: 15px;
     right: 15px;
@@ -510,7 +510,7 @@ div.message.hidden {
 .vertical-table th {
     padding: 0.5625rem 0.625rem;
     font-size: 0.875rem;
-    color: #1798A5;
+    color: #1a80bd;
     border: none;
     text-align: left;
 }
@@ -560,7 +560,6 @@ div.message.hidden {
 }
 
 .content .related h4 {
-    color: #ebaa20;
     padding-bottom: 0.5rem;
     margin-top: 20px;
     margin-bottom: 10px;

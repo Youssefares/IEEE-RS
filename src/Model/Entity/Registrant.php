@@ -2,8 +2,7 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
-use Cake\ORM\TableRegistry;
-use Cake\ORM\Query;
+
 /**
  * Registrant Entity.
  *
@@ -17,26 +16,12 @@ use Cake\ORM\Query;
  * @property string $Academic_Year
  * @property string $membership_status
  * @property int $fees
- * @property int $Ticket_Number
  * @property string $Registrer
  * @property string $Notes
  */
 class Registrant extends Entity
 {
-    protected function _setCourse_id($value){
-      $courses = TableRegistry::get('courses');
-      $course = $courses
-             ->find()
-             ->where(['id' => $value])
-             ->first();
-      $seats = $course->remaining_seats;
-      $c = $courses->query();
-      $c->update()
-       ->set(['remaining_seats' => $seats-1 ])
-       ->where(['id' => $value])
-       ->execute();
-      return $value;
-    }
+
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *

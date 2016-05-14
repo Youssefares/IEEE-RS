@@ -56,9 +56,5 @@
             <th><?= __('Fees') ?></th>
             <td><?= $this->Number->format($registrant->fees) ?></td>
         </tr>
-        <tr>
-            <th><?= __('Ticket Number') ?></th>
-            <td><?= $this->Number->format($registrant->Ticket_Number) ?></td>
-        </tr>
     </table>
 </div>

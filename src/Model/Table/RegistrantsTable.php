@@ -76,11 +76,6 @@ class RegistrantsTable extends Table
             ->notEmpty('fees');
 
         $validator
-            ->integer('Ticket_Number')
-            ->requirePresence('Ticket_Number', 'create')
-            ->notEmpty('Ticket_Number');
-
-        $validator
             ->requirePresence('Registrer', 'create')
             ->notEmpty('Registrer');
 
